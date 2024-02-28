@@ -1,0 +1,9 @@
+<div class="container">
+  <h1><i class="fa-solid fa-house"></i> Hello, {{ title }}</h1>
+
+  <ul>
+    <li *ngFor="let user of users">
+      {{user.id}} -   {{user.userName}}
+    </li>
+  </ul>
+</div>
