@@ -22,7 +22,7 @@ public class UsersController : ControllerBase
         return users;
     }
 
-    [HttpGet("{id}")] // /api/users/2
+    [HttpGet("{id}")] // /api/users/2111
     public async Task<ActionResult<Entities.AppUser>> GetUser(int id)
     {
         return await _context.Users.FindAsync(id);
