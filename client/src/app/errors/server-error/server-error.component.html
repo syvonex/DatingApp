@@ -1,0 +1,7 @@
+<p>Internet server-error</p>
+<ng-container *ngIf="error">
+    <h5>Error: {{error.message}}</h5>
+    <code>
+        {{error.details}}
+    </code>
+</ng-container>
